@@ -40,6 +40,7 @@ function Column({ title }) {
 
   return (
     <div className="column">
+      <div className="background"></div>
       <h3>{title}</h3>
 
       <button className="add-card" onClick={showAddCardWrapper}>

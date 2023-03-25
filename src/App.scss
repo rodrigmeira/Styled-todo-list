@@ -13,7 +13,7 @@ section {
     background-color: $color-header;
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 
     img {
       max-width: 150px;
@@ -32,12 +32,25 @@ section {
   }
 
   main {
-    background-color: $color-primary;
+    position: relative;
     padding: 20px;
     flex: 1;
     display: flex;
     gap: 30px;
     justify-content: center;
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../src/assets/Neon.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: blur(5px);
+      z-index: -1;
+      }
 
     .column {
       padding: 20px;
